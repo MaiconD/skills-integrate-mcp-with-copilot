@@ -13,8 +13,17 @@
     </header>
 
     <main>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div id="activities-toolbar" style="margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+          <input type="text" id="search-activity" placeholder="Search activities..." style="flex:1; min-width:180px; padding:8px; border-radius:4px; border:1px solid #ccc;" />
+          <label for="sort-activity" style="font-size:15px; margin-left:8px;">Sort by:</label>
+          <select id="sort-activity" style="padding:8px; border-radius:4px; border:1px solid #ccc;">
+            <option value="name">Name (A-Z)</option>
+            <option value="spots">Spots left (desc)</option>
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
